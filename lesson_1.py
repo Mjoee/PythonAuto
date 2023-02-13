@@ -1,5 +1,5 @@
 def multiply_by_two(x):
-    return x*2
+    return x * 2
 
 
 class MyFirstClass:
@@ -17,6 +17,7 @@ class MySecondClass:
 def demo_function():
     pass
 
+
 first_variable = 5
 second_variable = 10
 third_variable = 2
@@ -28,3 +29,5 @@ result = (first_variable +
 x = 3
 if x > 5:
     print('x is larger that 15')
+
+# =, +=, -=, ==, !=, >, <, >=, <=, is, is not, in, not in, not in, and, or, not
