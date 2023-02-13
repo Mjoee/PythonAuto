@@ -27,4 +27,4 @@ result = (first_variable +
 
 x = 3
 if x > 5:
-    print('x is larger that 5')
+    print('x is larger that 15')
