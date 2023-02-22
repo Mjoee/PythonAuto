@@ -37,13 +37,11 @@ except ValueError:
 rand_value = random.randint(0, 999)
 print(rand_value)
 
-
 def getSum(rand_value):
     sum = 0
-
     for digit in str(rand_value):
         sum += int(digit)
-    return sum()
+    return sum
 
 
 sum_value = (getSum(rand_value))
