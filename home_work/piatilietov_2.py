@@ -2,20 +2,22 @@ import random
 
 # task 1
 
+print("task 1")
 mIn = random.randint(0, 59)
 print(f"Minutes: {mIn}")
 
 if mIn <= 15:
     print("1/4 of hour")
-elif 15 < mIn <= 30:
+elif mIn <= 30:
     print("2/4 of hour")
-elif 31 <= mIn <= 45:
+elif mIn <= 45:
     print("3/4 of hour")
-elif 46 <= mIn <= 59:
+else:
     print("4/4 of hour")
 
 # task 2
 
+print("task 2")
 try:
     birth_date = int(input("Enter your birth month 1-12: "))
 
@@ -34,8 +36,11 @@ except ValueError:
 
     # task 3
 
+print("task 3")
 rand_value = random.randint(0, 999)
 print(rand_value)
+str_val = str(rand_value)
+last_digit = int(str_val[-1])
 
 def getSum(rand_value):
     sum = 0
@@ -43,16 +48,16 @@ def getSum(rand_value):
         sum += int(digit)
     return sum
 
-
 sum_value = (getSum(rand_value))
 
-if sum_value % 3 == 0:
+if sum_value % 3 == 0 and last_digit % 2 == 0:
     print(f"{rand_value} can be divided by 6")
 else:
     print(f"{rand_value} couldn't be divided by 6")
 
 # task 4
 
+print("task 4")
 coordinate_x = float(input("Enter x: "))
 coordinate_y = float(input("Enter y: "))
 
