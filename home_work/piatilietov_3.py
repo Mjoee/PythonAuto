@@ -34,7 +34,7 @@ while True:
         print("Notes (shortest to longest):")
         for note in sorted_notes:
             print(note)
-
+    # если вводим Exit то сработает break
     elif action == "Exit":
         print("Exiting program.")
         break
