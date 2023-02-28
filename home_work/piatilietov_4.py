@@ -40,6 +40,14 @@ list_2 = {2, 5, 7, 8, 1, 3, 10}
 list_3 = list_1.intersection(list_2)
 print(sorted(list_3))
 
+print("First list_1")
+for el in list(list_1):
+    print(el)
+
+print("Second list_2")
+for el in list(list_2):
+    print(el)
+
 # task 5
 
 string_test = "one two three one four five seven ten seven one"
