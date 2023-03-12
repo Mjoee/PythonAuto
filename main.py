@@ -1,14 +1,7 @@
-def isinDiapasone(to, isValue, from1=0) -> bool:
-    if to >= isValue >= from1:
-        return True
-    return False
+list_1 = [22, 22, 53, 43, 12, 42]
+test_1 = lambda x: x % 2 == 0
+filtered_list = list(filter(test_1, list_1))
+print(len(filtered_list))
 
-
-value = int(input("Enter value: "))
-to = int(input("Enter to: "))
-# from1 = int(input("Enter from: "))
-
-if isinDiapasone(to, value):
-    print("Digits in range")
-else:
-    print("Digits isn't in range")
+filtered_list2 = list(filter(lambda x: x % 2 != 0, list_1))
+print(len(filtered_list2))
